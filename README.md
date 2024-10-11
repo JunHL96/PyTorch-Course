@@ -8,6 +8,11 @@ $ source .venv/bin/activate
 $ pip install -U pip
 ```
 
+Install Common Packages:
+```
+pip install pandas numpy matplotlib
+```
+
 Install Torch:
 
 ```
