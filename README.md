@@ -41,6 +41,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-# print(f"MPS Available: {torch.backends.mps.is_available()}")
+mps = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
+print(f"MPS Available: {torch.backends.mps.is_available()}")
+
+# Example usage:
+# scalar
+scalar = torch.tensor(7, device = mps)
+scalar
 ```
