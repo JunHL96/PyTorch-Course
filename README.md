@@ -10,7 +10,9 @@ $ pip install -U pip
 
 Install Common Packages:
 ```
-pip install pandas numpy matplotlib
+pip install pandas
+pip install numpy
+pip install matplotlib
 ```
 
 Install Torch:
