@@ -27,25 +27,42 @@ Install TensorFlow:
 $ pip install tensorflow tensorflow-macos tensorflow-metal
 ```
 
-Install JAX:
-
-```
-$ pip install jax-metal ml_dtypes==0.2.0 jax==0.4.26 jaxlib==0.4.26
-```
-
-Using MPS (Metal Performance Shaders)
-
+Common Imports
 ```
 import torch
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-mps = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
-print(f"MPS Available: {torch.backends.mps.is_available()}")
+# Check the version
+print(f"PyTorch version: {torch.__version__}")
 
-# Example usage:
-# scalar
-scalar = torch.tensor(7, device = mps)
-scalar
+# Can also import the common abbreviation "nn" for "Neural Networks"
+from torch import nn
+
+# Base computer vision library
+import torchvision
+
+
+# Base text and natural language processing library
+import torchtext
+
+# Other components of TorchText (premade datasets, pretrained models and text transforms)
+from torchtext import datasets, models, transforms
+
+
+```
+
+Device Agnostic Code:
+
+```
+# Setup device-agnostic code 
+if torch.cuda.is_available():
+    device = "cuda" # NVIDIA GPU
+elif torch.backends.mps.is_available():
+    device = "mps" # Apple GPU
+else:
+    device = "cpu" # Defaults to CPU if NVIDIA GPU/Apple GPU aren't available
+
+print(f"Using device: {device}")
 ```
