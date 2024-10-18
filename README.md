@@ -27,28 +27,22 @@ Install TensorFlow:
 $ pip install tensorflow tensorflow-macos tensorflow-metal
 ```
 
-Common Imports
+Import Torch:
 ```
 import torch
+# Check the version
+print(f"PyTorch version: {torch.__version__}")
+```
+
+Other Common Imports:
+```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
-# Check the version
-print(f"PyTorch version: {torch.__version__}")
-
-# Can also import the common abbreviation "nn" for "Neural Networks"
-from torch import nn
-
-# Base computer vision library
-import torchvision
-
-
-# Base text and natural language processing library
-import torchtext
-
-# Other components of TorchText (premade datasets, pretrained models and text transforms)
-from torchtext import datasets, models, transforms
+from torch import nn # Can also import the common abbreviation "nn" for "Neural Networks"
+import torchvision # Base computer vision library
+import torchtext # Base text and natural language processing library
+from torchtext import datasets, models, transforms # Other components of TorchText (premade datasets, pretrained models and text transforms)
 
 
 ```
