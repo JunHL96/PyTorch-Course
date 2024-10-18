@@ -41,7 +41,7 @@ from torchtext import datasets, models, transforms # Other components of TorchTe
 
 ```
 
-## Device Agnostic Code:
+## Device-Agnostic Code:
 
 ```
 # Setup device-agnostic code 
