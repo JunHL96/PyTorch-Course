@@ -1,6 +1,6 @@
-# Installing PyTorch, TensorFlow, and JAX on Apple Silicon
+# Installing PyTorch and Tensorflow
 
-Create a virtual environment and update pip:
+## Create a virtual environment and update pip:
 
 ```
 $ python3 -m venv .venv
@@ -8,33 +8,27 @@ $ source .venv/bin/activate
 $ pip install -U pip
 ```
 
-Install Common Packages:
-```
-pip install pandas
-pip install numpy
-pip install matplotlib
-```
-
-Install Torch:
+# Common Imports
+## Install Torch:
 
 ```
 $ pip install torch torchvision torchaudio
 ```
 
-Install TensorFlow:
+## Install TensorFlow:
 
 ```
 $ pip install tensorflow tensorflow-macos tensorflow-metal
 ```
 
-Import Torch:
+## Import Torch:
 ```
 import torch
 # Check the version
 print(f"PyTorch version: {torch.__version__}")
 ```
 
-Other Common Imports:
+## Other Common Imports:
 ```
 import pandas as pd
 import numpy as np
@@ -47,7 +41,7 @@ from torchtext import datasets, models, transforms # Other components of TorchTe
 
 ```
 
-Device Agnostic Code:
+## Device Agnostic Code:
 
 ```
 # Setup device-agnostic code 
