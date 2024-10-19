@@ -3,22 +3,22 @@
 ## Create a virtual environment and update pip:
 
 ```
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -U pip
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -U pip
 ```
 
 # Common Imports
 ## Install Torch:
 
 ```
-$ pip install torch torchvision torchaudio
+pip install torch torchvision torchaudio
 ```
 
 ## Install TensorFlow:
 
 ```
-$ pip install tensorflow tensorflow-macos tensorflow-metal
+pip install tensorflow tensorflow-macos tensorflow-metal
 ```
 
 ## Import Torch:
