@@ -1,4 +1,4 @@
-# Installing PyTorch and Tensorflow
+# Installing PyTorch
 
 ## Create a virtual environment and update pip:
 
@@ -15,11 +15,6 @@ pip install -U pip
 pip install torch torchvision torchaudio
 ```
 
-## Install TensorFlow:
-
-```
-pip install tensorflow tensorflow-macos tensorflow-metal
-```
 
 ## Import Torch:
 ```
@@ -37,6 +32,7 @@ from torch import nn # Can also import the common abbreviation "nn" for "Neural 
 import torchvision # Base computer vision library
 import torchtext # Base text and natural language processing library
 from torchtext import datasets, models, transforms # Other components of TorchText (premade datasets, pretrained models and text transforms)
+from torch.utils.data import DataLoader
 
 
 ```
