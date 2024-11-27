@@ -1,13 +1,5 @@
 # Installing PyTorch
 
-## Create a virtual environment and update pip:
-
-```
-python3.12 -m venv .venv
-source .venv/bin/activate
-pip install -U pip
-```
-
 # Common Imports
 ## Install Torch:
 
