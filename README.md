@@ -1,13 +1,13 @@
 # Installing PyTorch
 
-# Common Imports
+
 ## Install Torch:
 
 ```
 pip install torch torchvision torchaudio
 ```
 
-
+# Common Imports
 ## Import Torch:
 ```
 import torch
